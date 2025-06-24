@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-blue-200 md:bg-red-500 lg:bg-green-500">
+
+
+
+    <!-- ========== HEADER ========== -->
+    <header
+        class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 dark:bg-neutral-800 dark:border-neutral-700">
+        <nav
+            class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center gap-x-1">
+                <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80 dark:text-white"
+                    href="#" aria-label="Rolex">Rolex</a>
+
+                <!-- Collapse Button -->
+                <button type="button"
+                    class="hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                    id="hs-header-base-collapse" aria-expanded="false" aria-controls="hs-header-base"
+                    aria-label="Toggle navigation" data-hs-collapse="#hs-header-base">
+                    <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" x2="21" y1="6" y2="6" />
+                        <line x1="3" x2="21" y1="12" y2="12" />
+                        <line x1="3" x2="21" y1="18" y2="18" />
+                    </svg>
+                    <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <!-- End Collapse Button -->
+            </div>
+
+            <!-- Collapse -->
+            <div id="hs-header-base"
+                class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block "
+                aria-labelledby="hs-header-base-collapse">
+                <div
+                    class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
+                    <div class="py-2 md:py-0  flex flex-col md:flex-row md:items-center gap-0.5 md:gap-1">
+                        <div class="grow">
+                            <div class="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
+                                <a class="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                    href="#" aria-current="page">
+                                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                                        <path
+                                            d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                    </svg>
+                                    Landing
+                                </a>
+
+                                <!-- Dropdown -->
+                                <div
+                                    class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--adaptive:adaptive] [--is-collapse:true] md:[--is-collapse:false] ">
+                                    <button id="hs-header-base-dropdown" type="button"
+                                        class="hs-dropdown-toggle w-full p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                        aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                        <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="m3 10 2.5-2.5L3 5" />
+                                            <path d="m3 19 2.5-2.5L3 14" />
+                                            <path d="M10 6h11" />
+                                            <path d="M10 12h11" />
+                                            <path d="M10 18h11" />
+                                        </svg>
+                                        Dropdown
+                                        <svg class="hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 shrink-0 size-4 ms-auto md:ms-1"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="m6 9 6 6 6-6" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative w-full md:w-52 hidden z-10 top-full ps-7 md:ps-0 md:bg-white md:rounded-lg md:shadow-md before:absolute before:-top-4 before:start-0 before:w-full before:h-5 md:after:hidden after:absolute after:top-1 after:start-4.5 after:w-0.5 after:h-[calc(100%-4px)] after:bg-gray-100 dark:md:bg-neutral-800 dark:after:bg-neutral-700"
+                                        role="menu" aria-orientation="vertical"
+                                        aria-labelledby="hs-header-base-dropdown">
+                                        <div class="py-1 md:px-1 space-y-0.5">
+                                            <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
+                                                href="#">
+                                                About
+                                            </a>
+
+                                            <div
+                                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] [--is-collapse:true] md:[--is-collapse:false] relative">
+                                                <button id="hs-header-base-dropdown-sub" type="button"
+                                                    class="hs-dropdown-toggle w-full flex justify-between items-center text-sm text-gray-800 rounded-lg p-2 md:px-3 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                                    Sub Menu
+                                                    <svg class="hs-dropdown-open:-rotate-180 md:hs-dropdown-open:-rotate-90 md:-rotate-90 duration-300 ms-auto shrink-0 size-4"
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="m6 9 6 6 6-6" />
+                                                    </svg>
+                                                </button>
+
+                                                <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative md:w-48 hidden z-10 md:mt-2 md:mx-2.5! md:top-0 md:end-full ps-7 md:ps-0 md:bg-white md:rounded-lg md:shadow-md dark:bg-neutral-800 dark:divide-neutral-700 before:hidden md:before:block before:absolute before:-end-5 before:top-0 before:h-full before:w-5 md:after:hidden after:absolute after:top-1 after:start-4.5 after:w-0.5 after:h-[calc(100%-4px)] after:bg-gray-100 dark:md:bg-neutral-800 dark:after:bg-neutral-700"
+                                                    role="menu" aria-orientation="vertical"
+                                                    aria-labelledby="hs-header-base-dropdown-sub">
+                                                    <div class="p-1 space-y-1">
+                                                        <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
+                                                            href="#">
+                                                            About
+                                                        </a>
+
+                                                        <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
+                                                            href="#">
+                                                            Downloads
+                                                        </a>
+
+                                                        <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
+                                                            href="#">
+                                                            Team Account
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
+                                                href="#">
+                                                Downloads
+                                            </a>
+
+                                            <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
+                                                href="#">
+                                                Team Account
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Dropdown -->
+
+                                <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                    href="#">
+                                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                        <circle cx="12" cy="7" r="4" />
+                                    </svg>
+                                    Account
+                                </a>
+
+                                <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                    href="#">
+                                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 12h.01" />
+                                        <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                                        <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+                                        <rect width="20" height="14" x="2" y="6" rx="2" />
+                                    </svg>
+                                    Work
+                                </a>
+
+                                <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                    href="#">
+                                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
+                                        <path d="M18 14h-8" />
+                                        <path d="M15 18h-5" />
+                                        <path d="M10 6h8v4h-8V6Z" />
+                                    </svg>
+                                    Blog
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="my-2 md:my-0 md:mx-2">
+                            <div class="w-full h-px md:w-px md:h-4 bg-gray-100 md:bg-gray-300 dark:bg-neutral-700">
+                            </div>
+                        </div>
+
+                        <!-- Button Group -->
+                        <div class=" flex flex-wrap items-center gap-x-1.5">
+                            <a class="py-[7px] px-2.5 inline-flex items-center font-medium text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 focus:outline-hidden focus:bg-gray-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                href="#">
+                                Sign in
+                            </a>
+                            <a class="py-2 px-2.5 inline-flex items-center font-medium text-sm rounded-lg bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:bg-blue-600"
+                                href="#">
+                                Get started
+                            </a>
+                        </div>
+                        <!-- End Button Group -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Collapse -->
+        </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+
+    <main class="bg-linear-to-r from-black via-orange-200 to-transparent text-white">
+        <section class="min-h-[60vh] bg-linear-to-r from-black via-orange-200 to-transparent text-white pt-20 py-10 ">
+            <div class="w-4/5 h-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+                <div class="space-y-8 order-last md:order-first text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold">A Crown for Every Achievement</h1>
+                    <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum temporibus
+                        pariatur quo fuga unde voluptatum, nisi iste sequi distinctio nulla.</p>
+                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, quam.</p>
+                    <div class="flex justify-center md:justify-start gap-10 mt-10">
+                        <button
+                            class="bg-white duration-300 text-black py-3 px-5 text-xl rounded-md hover:bg-black hover:text-white hover:border-2 hover:border-white">Buy
+                            Now</button>
+                        <button
+                            class="bg-white duration-300 text-black py-3 px-5 text-xl rounded-md hover:bg-black hover:text-white hover:border-2 hover:border-white">Add
+                            To Cart</button>
+
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center shadow-[0_35px_35px_Igba(0,0,0,0.25)] shadow-black ">
+                    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_640/v1710347632/rolexcom/new-watches/2024/main-navigation/rolex-watches-navigation-day-date-m228235-0055-10150_rsa_cad24_everose_carrousel_24"
+                        alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section class=" py-20 bg-linear-to-r from-black via-orange-200 to-transparent text-white">
+
+            <h1 class="text-center font-bold text-5xl mb-16"> Our Collections</h1>
+
+
+            <div class="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 ">
+
+                <div class="bg-black border-2 rounded-lg scale-90 duration-300 hover:scale-100 shadow-xl shadow-black ">
+                    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_640/v1742204746/rolexcom/navigation/watches-navigation/2025/rolex-watches-navigation-cosmograph-daytona-m126508-0008_2503stojan_002"
+                        alt="">
+                    <div class="text-center py-5">
+                        <h2 class="text-2xl">Cosmograph Daytona</h2>
+                        <p class="text-xl">MRP: ₹24,50,000</p>
+                    </div>
+
+                </div>
+                <div class="bg-black border-2 rounded-lg scale-90 duration-300 hover:scale-100 shadow-xl shadow-black ">
+                    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_640/v1742204746/rolexcom/navigation/watches-navigation/2025/rolex-watches-navigation-cosmograph-daytona-m126508-0008_2503stojan_002"
+                        alt="">
+                    <div class="text-center py-5">
+                        <h2 class="text-2xl">Cosmograph Daytona</h2>
+                        <p class="text-xl">MRP: ₹24,50,000</p>
+                    </div>
+
+                </div>
+                <div class="bg-black border-2 rounded-lg scale-90 duration-300 hover:scale-100 shadow-xl shadow-black ">
+                    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_640/v1742204746/rolexcom/navigation/watches-navigation/2025/rolex-watches-navigation-cosmograph-daytona-m126508-0008_2503stojan_002"
+                        alt="">
+                    <div class="text-center py-5">
+                        <h2 class="text-2xl">Cosmograph Daytona</h2>
+                        <p class="text-xl">MRP: ₹24,50,000</p>
+                    </div>
+
+                </div>
+                <div class="bg-black border-2 rounded-lg  scale-90 hover:scale-100 shadow-xl shadow-black  ">
+                    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_640/v1742204746/rolexcom/navigation/watches-navigation/2025/rolex-watches-navigation-cosmograph-daytona-m126508-0008_2503stojan_002"
+                        alt="">
+                    <div class="text-center py-5">
+                        <h2 class="text-2xl">Cosmograph Daytona</h2>
+                        <p class="text-xl">MRP: ₹24,50,000</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-center text-5xl font-bold my-4">Our Features</h2>
+            <div class="container mx-auto grid grid-cols-12 rounded-xl overflow-hidden">
+                <div class="col-span-12 md:col-span-4">
+                    <img class="w-full" src="data:image/jpeg;base64,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" alt="">
+                </div>                
+                <div class="col-span-12 md:col-span-8 p-10 space-y bg-black ">
+                    <h4 class="text-4xl fontn bold">Feature Title 1</h4>
+
+                    <p class="text-xl"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quo voluptates facilis reiciendis doloribus autem possimus? Quibusdam at praesentium cum tempore vero, debitis autem similique, facere quis sed, placeat cumque.</p>
+              
+              <ul>
+                <li>Item 1</li>
+                <li>item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>
+
+              <button class="bg-white text-black py-3 px-4 round-md">Learn More</button>
+                </div>                
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="bg-black text-white py-10 border-2 border-red 500">
+
+        <div class="container mx-auto grid grid-cols-12 gap-6 border-2 border-yellow-500">
+
+            <div class="col-span-6 border-2 border-emerald-500">
+
+                <h3 class="text-3xl">Rolex official Website</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea odit ad est quam fugit 
+                    ullam eaque vero quod cumque, debitis tempore voluptate assumenda voluptas perferendis officiis natus nemo minima ducimus.</p>
+
+                    <p class="font-bold">All Rights reserved &copy; 2025</p>
+                    
+
+            </div>
+            <div class="col-span-2">
+                <h3 class="text-xl font-bold"> Importants Links</h3>
+                    <ul class="mt-5 space-y-4">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"></a>About Us</li>
+                        <li><a href="#"></a>Our Service</li>
+                    </ul>
+            </div>
+            <div class="col-span-2">
+                <h3 class="text-xl font-bold"> Importants Links</h3>
+                    <ul class="mt-5 space-y-4">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"></a>About Us</li>
+                        <li><a href="#"></a>Our Service</li>
+                    </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

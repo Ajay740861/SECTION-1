@@ -14,7 +14,7 @@ console.log( movies.indexOf(' Pathan ') ); //also work for strings
 
 console.log( movies[ -2 ] );
 console.log( movies.flat(-2) );
-
+ 
 movies[2] = 'James Bond';
 
 console.log( movies);
